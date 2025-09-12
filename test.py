@@ -1,14 +1,16 @@
 import tkinter as tk
-from tkinter import ttk
+#from tkinter import ttk
+import ttkbootstrap as ttk
+
+def convert():
+    aaaa = entry_int.get()*2
+    output_string.set(aaaa)
 
 
-def convert():{
-    output_string.set(entry_int.get())
-}
 
 
 
-window = tk.Tk()
+window = ttk.Window(themename= "darkly")
 window.title("Teste")
 window.geometry('300x150')
 
