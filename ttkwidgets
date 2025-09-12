@@ -1,15 +1,38 @@
 import tkinter as tk
 from tkinter import ttk
 
+def button_func():
+    print("aaaaa")
+
+def insert_text():
+    textt = entry_text.get()
+    text.insert(textt)
+
 #create window
 window = tk.Tk()
 window.title("ttk abc")
 window.geometry('800x500')
 
 #widgets
-label = ttk.Label(master=window, text="teste do ttk")
+label = ttk.Label(master=window, text="test")
 label.pack()
 
+
+text = tk.Text(master=window)
+text.pack()
+
+entry = ttk.Entry(master=window)
+entry_text = tk.StringVar()
+entry.pack()
+
+label2 = ttk.Label(master=window, text="my label")
+label2.pack()
+
+button = ttk.Button(master=window, text="button", command=button_func)
+button.pack()
+
+button2 = ttk.Button(master=window, text="insert", command=insert_text)
+button2.pack()
 
 
 window.mainloop()
