@@ -9,14 +9,14 @@ def convert():
 
 
 
-
+#create window
 window = ttk.Window(themename= "darkly")
 window.title("Teste")
 window.geometry('300x150')
 
+#widgets
 test_label = ttk.Label(master=window, text="Miles to kilometers", font="calibre 24 bold")
 test_label.pack()
-
 input_frame = ttk.Frame(master = window)
 entry_int = tk.IntVar()
 entry = ttk.Entry(master=input_frame, textvariable=entry_int)
