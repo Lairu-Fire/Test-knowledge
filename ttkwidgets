@@ -5,8 +5,8 @@ def button_func():
     print("aaaaa")
 
 def insert_text():
-    textt = entry_text.get()
-    text.insert(textt)
+    textt = entry.get()
+    text.insert('end',textt + '\n')
 
 #create window
 window = tk.Tk()
@@ -22,7 +22,6 @@ text = tk.Text(master=window)
 text.pack()
 
 entry = ttk.Entry(master=window)
-entry_text = tk.StringVar()
 entry.pack()
 
 label2 = ttk.Label(master=window, text="my label")
